@@ -1,0 +1,34 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: discussPost-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/niuke?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+  # thymeleaf
+  thymeleaf:
+    cache: false
+  redis:
+    database: 1
+    host: localhost
+    port: 6379
+  main:
+    allow-bean-definition-overriding: true
+
+mybatis-plus:
+  configuration:
+    # 驼峰转换
+    map-underscore-to-camel-case: true
+    # 自动生成 id
+    use-generated-keys: true
+  mapper-locations: classpath:public/mapper/*.xml
+  type-aliases-package: com.nie.entity
+

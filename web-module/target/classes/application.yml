@@ -1,0 +1,23 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: web-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  main:
+    allow-bean-definition-overriding: true
+  thymeleaf:
+    cache: false
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

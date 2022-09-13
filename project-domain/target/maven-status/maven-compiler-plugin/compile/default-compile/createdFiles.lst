@@ -1,0 +1,8 @@
+com\nie\entity\DiscussPost.class
+com\nie\result\ResponseApi.class
+com\nie\result\ErrorCodeEnum.class
+com\nie\entity\Message.class
+com\nie\entity\User.class
+com\nie\entity\Comment.class
+com\nie\entity\LoginTicket.class
+com\nie\entity\Page.class
